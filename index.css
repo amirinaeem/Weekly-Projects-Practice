@@ -1,0 +1,529 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+nav a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+nav a:hover {
+  background-color: rgb(181, 180, 180);
+}
+
+.main-container {
+  margin: 50px 10px;
+}
+
+.section-1 {
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 30px;
+}
+
+.header-content {
+  margin-bottom: 30px;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.image-box1 {
+  width: 100%;
+  position: relative;
+}
+.image-box1 img {
+  width: 100%;
+}
+
+.image-box2 img {
+  width: 100%;
+}
+
+.image-box3 img {
+  width: 100%;
+}
+
+.image-box2 {
+  display: none;
+  position: relative;
+}
+
+.image-box3 {
+  display: none;
+  position: relative;
+}
+.image-box.active {
+  display: block;
+}
+
+.image-box span {
+  background-color: white;
+  padding: 12px 25px;
+}
+.coffee {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  display: none;
+}
+
+.coffee.active {
+  transform-origin: bottom;
+  transform: translateY(-90%);
+  transform: translateX(3%);
+  transition: transform 0.5s ease-in;
+  display: block;
+}
+
+.workbench {
+  position: absolute;
+  left: calc(50% - 60px);
+  top: calc(50% - 25px);
+  display: none;
+}
+
+.workbench.active {
+  transform-origin: bottom;
+  transform: translateY(50% - 25px);
+  transform: translateX(50% - 60px);
+  transition: transform 0.5s ease-in;
+  display: block;
+}
+
+.sound {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  display: none;
+}
+
+.sound.active {
+  transform-origin: bottom;
+  transform: translateY(-90%);
+  transform: translateX(3%);
+  transition: transform 0.5s ease-in;
+  display: block;
+}
+
+.sewitch-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(104, 104, 104);
+  position: relative;
+}
+
+.sewitch-bottom i {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.sewitch-bottom i:hover {
+  color: rgb(87, 210, 244);
+}
+
+.left-buttom {
+  position: absolute;
+  left: 4%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.right-buttom {
+  position: absolute;
+  right: 4%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.sewitch-bottom button {
+  height: 25%;
+  width: 15px;
+  margin: 0 3px;
+  border: 1px solid white;
+  background: rgb(101, 100, 100);
+}
+.sewitch-bottom .btn.active {
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .section-2 .offer-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-3 .plan-sectionwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-4 .team-sectionwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .team-card-wrapper {
+    margin-left: 20px;
+  }
+}
+
+.section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.section2-title h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.section2-title div {
+  font-size: 1.8rem;
+  text-align: center;
+  background: rgb(101, 100, 100);
+  width: 180px;
+  height: 5px;
+}
+
+.offer-section {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.offer-box {
+  width: 100%;
+  height: 170px;
+  margin-bottom: -1px;
+}
+
+.offer-box h2 {
+  font-size: 25px;
+}
+
+.offer-box.graycolor {
+  background: rgb(241, 240, 240);
+  padding: 10px;
+  padding-bottom: 100px;
+}
+
+.offer-box.graydark {
+  background: rgb(151, 150, 150);
+  padding: 10px;
+}
+
+.offer-box.blacklight {
+  background: rgb(81, 81, 81);
+  color: white;
+  padding: 10px;
+}
+
+.offer-box.blackcolor {
+  background: rgb(5, 5, 5);
+  color: white;
+  padding: 10px;
+}
+
+.section-3 {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.plan-sectionwrapper {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+}
+
+.section3-title h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.plan-section {
+  width: 100%;
+  border: 1px solid rgb(211, 206, 206);
+  margin-left: 20px;
+  height: 100%;
+}
+
+.plan-section:hover {
+  box-shadow: 0 0 10px rgb(101, 100, 100);
+  cursor: pointer;
+}
+
+.plan-section p {
+  border-bottom: 0.005px solid rgb(222, 217, 217);
+  height: 50px;
+}
+
+.plan-section .big {
+  height: 110px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-section .big.black {
+  background: rgb(5, 5, 5);
+  color: white;
+  font-size: 25px;
+}
+
+.big.white span {
+  padding: 8px;
+}
+
+.plan-section .big.gray {
+  background: rgb(242, 242, 242);
+}
+
+.big.gray button {
+  padding: 15px;
+  width: 100px;
+  background: rgb(6, 179, 44);
+  color: white;
+  border: 0;
+}
+
+.big.gray > button:hover {
+  background: rgb(175, 186, 177);
+  color: white;
+}
+
+.plan-section.card2 {
+  margin-top: 20px;
+}
+
+.plan-section.card3 {
+  margin-top: 20px;
+}
+
+.section-4 {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-sectionwrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.section4-head-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section-4-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.title-line {
+  width: 160px;
+  height: 6px;
+  background: rgb(85, 84, 84);
+}
+
+.team-card-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0.2rem 0.1rem 0.2rem 0.2rem rgb(230, 230, 230);
+  margin-bottom: 20px;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2px 20px;
+}
+
+.team-position {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(154, 154, 154);
+  padding: 2px 20px;
+}
+
+.team-description {
+  font-size: 1rem;
+  padding: 2px 20px;
+}
+
+.btn-contact {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 5px 20px 15px;
+  padding: 10px 20px;
+}
+
+.btn-contact:hover {
+  background: rgb(175, 186, 177);
+  color: white;
+}
+
+.form-section-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section-5-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section-5 {
+  width: 100%;
+  padding: 5px 20px;
+}
+.form-section-5 input {
+  padding: 10px;
+  border: 0.1px solid rgb(222, 217, 217);
+  border-radius: 5px;
+}
+
+.form-section-5 label {
+  padding-top: 20px;
+}
+
+.btn-send {
+  border: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: black;
+  padding: 10px 0px;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-send:hover {
+  background-color: rgb(81, 81, 81);
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.btn-footer {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 20px 20px 15px 30px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+.btn-footer:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-footer i {
+  font-size: 16px;
+}
+
+.section5-icon i {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  padding-bottom: 30px;
+}
